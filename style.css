@@ -1,0 +1,102 @@
+*{
+    color: white;
+    font-family: sans-serif;
+    transition: 0.2 ease-in-out;
+    user-select: none;
+}
+
+.align{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h3{
+    color: rgb(240, 246, 242);
+}
+body{
+    justify-content: center;
+    background-image: url(./hjq1DPB-light-yagami-wallpaper.jpg);
+    background-size: cover;
+    backdrop-filter: blur(2px);
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    text-align: center;
+    padding: auto;
+}
+
+.turn-container{
+    width: 170px;
+    height: 80px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    position: relative;
+}
+
+.turn-container h3{
+    margin: 15px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.turn-container .turn-box{
+    border: 3px solid black;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.turn-container .turn-box:nth-child(even) {
+    border-right: none;
+}
+.bg{
+    position: absolute;
+    bottom: 0;
+    transform: translateY(12%);
+    width: 85px;
+    height: 29px;
+    background-color: hsl(8, 78%, 60%);
+    z-index: -1;
+}
+
+.main-grid{
+    transform: translateY(20%);
+    background-color: rgb(134, 123, 123);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    height: 300px;
+    width: 350px;
+    margin: 30px auto;
+    border: 2px solid rgb(0, 0, 0);;
+}
+.box{
+    border: 2px solid rgb(244, 229, 229);
+    font-size: 2rem;
+    font-weight: 700;
+    border: 2px solid rgb(0, 0, 0);
+}
+
+.box:hover{
+    cursor: pointer;
+    background-color: #7d6565;
+}
+#play-again{
+    background-color: #FF2E63;
+    padding: 10px 25px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 0px black;
+    cursor: pointer;
+    transform: translateY(130%);
+}
+
+#play-again:hover{
+    cursor: pointer;
+    padding: 10px 30px;
+    background-color: rgb(184, 131, 233);
+    color: black;
+}
+#results{
+    transform: translateY(190%);
+}
